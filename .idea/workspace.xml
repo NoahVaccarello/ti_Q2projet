@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e8172fb-9402-4ff9-8653-aaada7607b9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/data/mag_cat_prod.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/dumps/Backup demo 27 MARS 2024.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/dumps/Backup demo16 avril 2024.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/plpgsql/delete_client.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/plpgsql/update_client.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/plpgsql/verifier_admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/vues/vue_categorie_sous_categorie.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/vues/vue_pays_villes.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/backup/vues/vue_produits_cat_sous_cat_mag.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/index_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/ajout_client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/disconnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/exer_jquery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/gestion_clients.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/page404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/css/gestion_client.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/images/delete.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/images/mozart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/js/boutique.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/js/fonctions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxAjoutClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxRechercheClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxUpdateClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/Admin.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/AdminDB.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/Autoloader.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/Boutique.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/BoutiqueDB.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/Categorie.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/CategorieDB.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/Client.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/ClientDB.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/classes/Connexion.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/db/dbPgConnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/utils/liste_includes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/utils/menu_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/utils/menu_public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/php/utils/verifier_connexion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index_.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/boutique.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/modele2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/page404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ti_Q2projet.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2fUZ7E0wAsnCmp4YfFQoaf6CFvT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/dashboard/ti_Q2projet/admin/public/js&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\dashboard\ti_Q2projet\admin\public\js" />
+      <recent name="C:\xampp\htdocs\dashboard\ti_Q2projet\pages" />
+      <recent name="C:\xampp\htdocs\dashboard\ti_Q2projet" />
+      <recent name="C:\xampp\htdocs\dashboard\ti_Q2projet\admin\pages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e8172fb-9402-4ff9-8653-aaada7607b9e" name="Changes" comment="" />
+      <created>1713857450440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713857450440</updated>
+      <workItem from="1713857451493" duration="6401000" />
+      <workItem from="1714033889095" duration="6636000" />
+      <workItem from="1714048634186" duration="12110000" />
+      <workItem from="1714073824784" duration="3672000" />
+      <workItem from="1715017781441" duration="1193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
