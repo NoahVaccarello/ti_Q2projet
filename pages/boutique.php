@@ -14,7 +14,7 @@ $nbr_cat = count($liste);
 
         <div class="shop-grid">
             <?php for ($i = 0; $i < $nbr_cat; $i++) { ?>
-            <div class="shop-item" data-name="Polo" data-price="45€">
+            <div class="shop-item" data-name="<?php print $liste[$i]->nom_vet; ?>" data-price="<?php print $liste[$i]->prix; ?>">
                 <img src="./admin/image/<?php print $liste[$i]->image_vet; ?>">
                 <strong>BMW</strong>
                 <p><?php print $liste[$i]->nom_vet; ?></p>

@@ -46,6 +46,8 @@ class ClientDB
     }
 
 
+
+
     public function getClientByEmail($email){
         try{
             $query="select * from client where email = :email";

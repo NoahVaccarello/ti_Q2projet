@@ -34,18 +34,18 @@ header.header {
 
 header.header img {
     width: 100px;
-    margin: 0 10px; /* Modification pour ajouter une marge à droite du logo */
+    margin: 0 10px;
 }
 
 .lien {
     display: flex;
     list-style: none;
-    justify-content: center; /* Modification pour centrer les liens horizontalement */
+    justify-content: center;
     padding-bottom: 10px;
 }
 
 .lien li {
-    margin: 0 20px; /* Modification pour ajouter une marge entre les liens */
+    margin: 0 20px;
 }
 
 .lien li a {
@@ -252,11 +252,11 @@ button.add-to-cart:hover {
     font-size: 50px;
 }
 
-/*SHO//////////////////////////////////////////////////////////////////////////////////*/
+/*SHOP//////////////////////////////////////////////////////////////////////////////////*/
 
 .shop-grid {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-gap: 20px;
     animation: apparition 1s ease-out;
 }

@@ -1,5 +1,7 @@
 <h2>Gestion des clients</h2>
-<a href="index_.php?page=ajout_client.php">Nouveau client</a><br>
+<div class="newclient">
+<a href="index_.php?page=ajout_client.php" >Nouveau client</a><br>
+</div>
 
 <?php
 //récupération des clients et affichage dans table bootstrap
@@ -37,13 +39,16 @@ else{
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="prenom_client"><?= $liste[$i]->prenom_client;?></td>
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="email"><?= $liste[$i]->email;?></td>
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
-            <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="numero"><?= $liste[$i]->numero;?>"><?= $liste[$i]->numero;?></td>
-            <td contenteditable="true"><img src="public/images/delete.jpg" alt="Effacer" id="delete"></td>
+            <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="numero"><?= $liste[$i]->numero;?></td>
+            <td class="delete_td">
+                <button data-id="<?= $liste[$i]->id_client; ?>" class="delete_td_btn"><i class="bi bi-trash3-fill delete"></i></button>
+            </td>
         </tr>
             <?php
         }
         ?>
 
+        <script src="../public/js/supp.js"></script>
         </tbody>
     </table>
 <?php
