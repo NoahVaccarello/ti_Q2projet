@@ -41,14 +41,14 @@ else{
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="numero"><?= $liste[$i]->numero;?></td>
             <td class="delete_td">
-                <button data-id="<?= $liste[$i]->id_client; ?>" class="delete_td_btn"><i class="bi bi-trash3-fill delete"></i></button>
+                <button data-id="<?= $liste[$i]->id_client; ?>" class="btn btn_delete"><i class="bi bi-trash3-fill delete"></i></button>
             </td>
         </tr>
             <?php
         }
         ?>
 
-        <script src="../public/js/supp.js"></script>
+        <script src="/admin/public/js/fonctions.js"></script>
         </tbody>
     </table>
 <?php

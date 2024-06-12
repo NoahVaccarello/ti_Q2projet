@@ -45,7 +45,21 @@ class ClientDB
         }
     }
 
-
+    public function supprimerClient($id) {
+        $query = "SELECT supprimerclient(:id)";
+        try {
+            $this->_bd->beginTransaction();
+            $res = $this->_bd->prepare($query);
+            $res->bindValue(':id', $id);
+            $res->execute();
+            $this->_bd->commit();
+            return true;
+        } catch (PDOException $e) {
+            $this->_bd->rollback();
+            print "Echec " . $e->getMessage();
+            return false;
+        }
+    }
 
 
     public function getClientByEmail($email){

@@ -129,4 +129,24 @@ $(document).ready(function () {
         $('#montrer_image').fadeIn(2000);
     })
 
+    $('.btn_delete').click(function () {
+        let id = $(this).data('id');
+        $(this).closest('tr').remove();
+        let param = {id: id};
+        let retour = $.ajax({
+            type: 'get',
+            dataType: 'json',
+            data: param,
+            url: './src/php/ajax/ajaxSupprimerClient.php',
+            success: function (data) {
+                console.log(data);
+                console.log('Client supprimé avec succès');
+            },
+            error: function (data) {
+                console.log(data);
+                alert('Problème lors de la suppression');
+            }
+        });
+    });
+
 });

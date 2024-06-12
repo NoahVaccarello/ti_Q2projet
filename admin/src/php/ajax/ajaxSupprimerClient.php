@@ -6,7 +6,7 @@ require '../classes/Client.class.php';
 require '../classes/ClientDB.class.php';
 
 $cnx = Connexion::getInstance($dsn,$user,$password);
-$cl = new ClientDB($cnx);
-$data[] = $cl->supp_client($_GET['id']);
-print json_encode($data);
 
+$cl = new ClientDB($cnx);
+$data[] = $cl->supprimerClient($_GET['id']);
+print json_encode($data);
