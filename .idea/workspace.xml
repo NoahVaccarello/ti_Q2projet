@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e8172fb-9402-4ff9-8653-aaada7607b9e" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/admin/pages/modifier_client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/gestion_clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_clients.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/public/js/fonctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/js/fonctions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/public/js/supp.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/js/supp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/php/ajax/ajaxSupprimerClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxSupprimerClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/ClientDB.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/ClientDB.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <workItem from="1718189147489" duration="505000" />
       <workItem from="1718205500489" duration="1242000" />
       <workItem from="1718211182671" duration="6491000" />
-      <workItem from="1718227254884" duration="2054000" />
+      <workItem from="1718227254884" duration="4617000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -111,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718228124147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1718229583113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718229583113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

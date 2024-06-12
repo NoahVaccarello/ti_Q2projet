@@ -86,33 +86,35 @@ body {
     background-repeat: no-repeat;
 }
 
-.delete_td_btn {
-    background-color: transparent;
-    border: none;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    cursor: pointer;
+
+ .btn.btn {
+     background-color: #54a4d3;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     transition-duration: 0.4s;
+ }
+
+.btn.btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #54a4d3;
 }
 
-.delete_td_btn::before, .delete_td_btn::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70%;
-    height: 2px;
-    background-color: #000000;
-    transform-origin: center;
+.btn.btn i {
+    color: white;
 }
 
-.delete_td_btn::before {
-    transform: translate(-50%, -50%) rotate(45deg);
+.btn.btn:hover i {
+    color: black;
 }
 
-.delete_td_btn::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
 
 section h1 {
     color: #ececec;
@@ -171,3 +173,4 @@ button:hover {
     align-items: center;
     text-align: center;
 }
+

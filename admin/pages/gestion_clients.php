@@ -25,6 +25,7 @@ else{
             <th scope="col">Email</th>
             <th scope="col">Adresse</th>
             <th scope="col">Numéro</th>
+            <th scope="col">Modifier</th>
             <th scope="col">Supprimer</th>
         </tr>
 
@@ -40,15 +41,18 @@ else{
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="email"><?= $liste[$i]->email;?></td>
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="numero"><?= $liste[$i]->numero;?></td>
-            <td class="delete_td">
-                <button data-id="<?= $liste[$i]->id_client; ?>" class="btn btn_delete"><i class="bi bi-trash3-fill delete"></i></button>
+
+            <td> <a href="index_.php?page=modifier_client.php&id=<?= $liste[$i]->id_maison;?>"><i class="bi bi-trash3-fill delete"></i>Modifier</button></a>
+            </td>
+            <td class="delete_td"><a href="index_.php?page=modifier_client.php">
+                <button data-id="<?= $liste[$i]->id_client; ?>" class="btn btn_delete"><i class="bi bi-trash3-fill delete"></i>Supprimer</button></a>
             </td>
         </tr>
             <?php
         }
         ?>
 
-        <script src="/admin/public/js/fonctions.js"></script>
+        <script src="./admin/public/js/fonctions.js"></script>
         </tbody>
     </table>
 <?php
