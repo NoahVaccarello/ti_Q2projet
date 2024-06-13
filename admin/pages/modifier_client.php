@@ -1,40 +1,59 @@
 <?php
-if (isset($_GET['id']) && is_numeric($_GET['id'])) {
-    $clientDB = new ClientDB($cnx);
-    $client = $clientDB->getClientById(intval($_GET['id']));
-} else {
-    exit('Aucun bon identifiant de client');
+require 'src/php/utils/verifier_connexion.php';
+$clients = new ClientDB($cnx);
+$id_client = $_GET['id'];
+
+$liste = $clients->getClientById($id_client);
+
+if ($liste) {
+    $id = $liste[0]->id_client;
+    $nom = $liste[0]->nom_client;
+    $prenom = $liste[0]->prenom_client;
+    $email = $liste[0]->email;
+    $adresse = $liste[0]->adresse;
+    $numero = $liste[0]->numero;
 }
 ?>
 
-<h2>Modification des clients</h2>
+<h2>Modifier un client</h2>
+<br>
 <div class="container">
-    <form id="form_modification" method="get">
-        <input type="hidden" name="id_client">
-        <div class="mb-3">
-            <label for="nom_client" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="nom_client" name="nom_client" value="<?= $client[0]->nom_client ?? ''; ?>">
+    <form method="get" id="formulaire_modifierClient" action="">
+
+        <div class="form-group row mb-3">
+            <label for="prenom" class="col-sm-2 col-form-label">Nom du client</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="prenom" value="<?= $nom; ?>">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="prenom_client" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="prenom_client" name="prenom_client"  value="<?= $client[0]->prenom_client ?? ''; ?>">
+        <div class="form-group row mb-3">
+            <label for="nom" class="col-sm-2 col-form-label">Prenom du client</label>
+            <div class="col-sm-10">
+                <input type="hidden" name="id" id="id" value="<?= $id; ?>">
+                <input type="text" class="form-control" id="email" name="email" placeholder="email"
+                       value="<?= $prenom; ?>">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="text" class="form-control" id="email" name="email"  value="<?= $client[0]->email ?? ''; ?>">
+        <div class="form-group row mb-3">
+            <label for="email" class="col-sm-2 col-form-label">Adresse mail</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="nom" name="nom" placeholder="nom" value="<?= $email; ?>">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="adresse" class="form-label">Adresse</label>
-            <input type="text" class="form-control" id="adresse" name="adresse"  value="<?= $client[0]->adresse ?? ''; ?>">
+        <div class="form-group row mb-3">
+            <label for="adresse" class="col-sm-2 col-form-label">Adresse du client</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="adresse" name="adresse" placeholder="adresse" value="<?= $adresse; ?>">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="numero" class="form-label">Numéro</label>
-            <input type="text" class="form-control" id="numero" name="numero"  value="<?= $client[0]->numero ?? ''; ?>">
+        <div class="form-group row mb-3">
+            <label for="numero" class="col-sm-2 col-form-label">Numéro</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="numero" name="numero" placeholder="numero" value="<?= $numero; ?>">
+            </div>
         </div>
-        <input type="hidden" name="id_client" value="<?= $client[0]->id_client;?>" id="id_client">
-        <button type="submit" id="texte_bouton_modif" class="btn btn-primary">
-            Modifier
-        </button>
-        <button class="btn btn-primary" type="reset" id="reset">Annuler</button>
+        <br>
+        <button type="submit" class="btn btn-outline-success" id="btn_modif">Modifier</button>
+        <button type="reset" id="reset" class="btn btn-outline-success">Annuler</button>
     </form>
 </div>

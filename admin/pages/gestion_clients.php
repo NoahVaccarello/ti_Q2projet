@@ -1,7 +1,5 @@
 <h2>Gestion des clients</h2>
-<div class="newclient">
-<a href="index_.php?page=ajout_client.php" >Nouveau client</a><br>
-</div>
+
 
 <?php
 //récupération des clients et affichage dans table bootstrap
@@ -42,7 +40,7 @@ else{
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="numero"><?= $liste[$i]->numero;?></td>
 
-            <td> <a href="index_.php?page=modifier_client.php&id=<?= $liste[$i]->id_maison;?>"><i class="bi bi-trash3-fill delete"></i>Modifier</button></a>
+            <td> <a href="index_.php?page=modifier_client.php&id=<?= $liste[$i]->id_client;?>"><i class="bi bi-trash3-fill delete"></i>Modifier</button></a>
             </td>
             <td class="delete_td"><a href="index_.php?page=modifier_client.php">
                 <button data-id="<?= $liste[$i]->id_client; ?>" class="btn btn_delete"><i class="bi bi-trash3-fill delete"></i>Supprimer</button></a>
@@ -55,6 +53,10 @@ else{
         <script src="./admin/public/js/fonctions.js"></script>
         </tbody>
     </table>
+
+    <div class="newclient">
+        <a href="index_.php?page=ajout_client.php" class="myButton">Nouveau client</a><br>
+    </div>
 <?php
 }
 
