@@ -149,4 +149,37 @@ $(document).ready(function () {
         });
     });
 
+    $('#btn_modif').off('click').on('click', function (e) {
+        e.preventDefault()
+        let email = $('#email').val();
+        let nom = $('#nom').val();
+        let prenom = $('#prenom').val();
+        let adresse = $('#adresse').val();
+        let numero = $('#numero').val();
+
+        let id = $('#id').val();
+        let param = {id: id,nom: nom , prenom: prenom, email: email,adresse: adresse, numero: numero};
+        console.log(param);
+        let retour = $.ajax({
+            type: 'post',
+            dataType: 'json',
+            data: param,
+            url: './src/php/ajax/ajaxUpdateClient.php',
+            success: function (data) {
+                console.log(data);
+                if (data.success) {
+                    console.log('Client modifié avec succès');
+                    window.location.href = 'index_.php?page=gestion_clients.php';
+                } else {
+                    alert('Erreur lors de la modification: ' + data.message);
+                }
+            },
+            error: function (data) {
+                console.log(data);
+                alert('Problème lors de la modification');
+            }
+        });
+    });
+
+
 });

@@ -11,16 +11,19 @@ class ClientDB
         $this->_bd = $cnx;
     }
 
-    public function updateClient($id, $champ, $valeur)
+    public function updateClient($id, $nom, $prenom, $email, $adresse, $numero)
     {
-        $query = "select update_client(:id,:champ,:valeur)";
-        //$query= "update client set $champ='$valeur' where id_client=$id";
+        $query = "select update_client(:id,:nom,:prenom,:email,:adresse,:numero)";
+
         try {
             $this->_bd->beginTransaction();
             $res = $this->_bd->prepare($query);
             $res->bindValue(':id', $id);
-            $res->bindValue(':champ', $champ);
-            $res->bindValue(':valeur', $valeur);
+            $res->bindValue(':nom', $nom);
+            $res->bindValue(':prenom', $prenom);
+            $res->bindValue(':email', $email);
+            $res->bindValue(':adresse', $adresse);
+            $res->bindValue(':numero', $numero);
             $res->execute();
             $this->_bd->commit();
         } catch (PDOException $e) {

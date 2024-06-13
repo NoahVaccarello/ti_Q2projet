@@ -40,9 +40,10 @@ else{
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
             <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="numero"><?= $liste[$i]->numero;?></td>
 
-            <td> <a href="index_.php?page=modifier_client.php&id=<?= $liste[$i]->id_client;?>"><i class="bi bi-trash3-fill delete"></i>Modifier</button></a>
+            <td>
+                <a href="index_.php?page=modifier_client.php&id=<?= $liste[$i]->id_client;?>" class="btn-modifier"><i class="bi bi-trash3-fill delete"></i>Modifier</a>
             </td>
-            <td class="delete_td"><a href="index_.php?page=modifier_client.php">
+            <td class="delete_td">
                 <button data-id="<?= $liste[$i]->id_client; ?>" class="btn btn_delete"><i class="bi bi-trash3-fill delete"></i>Supprimer</button></a>
             </td>
         </tr>

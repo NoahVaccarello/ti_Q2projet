@@ -2,9 +2,7 @@
 require 'src/php/utils/verifier_connexion.php';
 $clients = new ClientDB($cnx);
 $id_client = $_GET['id'];
-
 $liste = $clients->getClientById($id_client);
-
 if ($liste) {
     $id = $liste[0]->id_client;
     $nom = $liste[0]->nom_client;
@@ -23,21 +21,21 @@ if ($liste) {
         <div class="form-group row mb-3">
             <label for="prenom" class="col-sm-2 col-form-label">Nom du client</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="prenom" value="<?= $nom; ?>">
+                <input type="text" class="form-control" id="nom" name="nom" placeholder="nom" value="<?= $nom; ?>">
             </div>
         </div>
         <div class="form-group row mb-3">
             <label for="nom" class="col-sm-2 col-form-label">Prenom du client</label>
             <div class="col-sm-10">
                 <input type="hidden" name="id" id="id" value="<?= $id; ?>">
-                <input type="text" class="form-control" id="email" name="email" placeholder="email"
+                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="prenom"
                        value="<?= $prenom; ?>">
             </div>
         </div>
         <div class="form-group row mb-3">
             <label for="email" class="col-sm-2 col-form-label">Adresse mail</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="nom" name="nom" placeholder="nom" value="<?= $email; ?>">
+                <input type="text" class="form-control" id="email" name="email" placeholder="email" value="<?= $email; ?>">
             </div>
         </div>
         <div class="form-group row mb-3">

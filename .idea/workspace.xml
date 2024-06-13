@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e8172fb-9402-4ff9-8653-aaada7607b9e" name="Changes" comment="ajout modif mais bug">
+    <list default="true" id="4e8172fb-9402-4ff9-8653-aaada7607b9e" name="Changes" comment="modif FONCTIONNE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/backup/plpgsql/update_client.sql" beforeDir="false" afterPath="$PROJECT_DIR$/admin/backup/plpgsql/update_client.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/gestion_clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_clients.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/modifier_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/modifier_client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/public/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/js/fonctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/js/fonctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/ajax/ajaxUpdateClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxUpdateClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/ClientDB.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/ClientDB.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +98,8 @@
       <workItem from="1718211182671" duration="6491000" />
       <workItem from="1718227254884" duration="5239000" />
       <workItem from="1718258858304" duration="1287000" />
-      <workItem from="1718265722180" duration="1641000" />
+      <workItem from="1718265722180" duration="5094000" />
+      <workItem from="1718271087875" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -128,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718232226026</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modif FONCTIONNE">
+      <option name="closed" value="true" />
+      <created>1718267598842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718267598842</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="ajout modif mais bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout modif mais bug" />
+    <MESSAGE value="modif FONCTIONNE" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif FONCTIONNE" />
   </component>
 </project>
